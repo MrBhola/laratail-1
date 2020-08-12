@@ -2,13 +2,15 @@
 
 @section('css')
 <link rel="stylesheet" href="/assets/lib/select2/select2.css">
+<link rel="stylesheet" href="/css/parse.css">
 @endsection
 
 @section('content')
 <div class="container mx-auto my-10 px-6 md:px-12">
-    <p>
+    <div class="markdown">
+
         {!! parseMarkdown($article->description)!!}
-    </p>
+    </div>
 </div>
 @endsection
 
