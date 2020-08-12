@@ -7,7 +7,7 @@
 @section('content')
 <div class="container mx-auto my-10 px-6 md:px-12">
     <p>
-        {!!$article->description!!}
+        {!! parseMarkdown($article->description)!!}
     </p>
 </div>
 @endsection

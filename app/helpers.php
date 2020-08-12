@@ -19,3 +19,7 @@ function isCmsLink()
     );
     return $isCmsLink ? 'true' : 'false';
 }
+function parseMarkdown($data)
+{
+    return Illuminate\mail\Markdown::parse($data);
+}
