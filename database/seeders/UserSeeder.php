@@ -1,5 +1,7 @@
 <?php
 
+namespace Database\Seeders;
+
 use App\Domain\User\Enums\Role;
 use App\User;
 use Illuminate\Database\Seeder;

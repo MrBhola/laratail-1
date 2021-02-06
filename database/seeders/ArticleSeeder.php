@@ -1,9 +1,11 @@
 <?php
 
-use Aammui\LaravelTaggable\Models\Category;
-use Illuminate\Database\Seeder;
+namespace Database\Seeders;
 
-class CategorySeeder extends Seeder
+use Illuminate\Database\Seeder;
+use Tests\Factories\ArticleFactory;
+
+class ArticleSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,6 +14,6 @@ class CategorySeeder extends Seeder
      */
     public function run()
     {
-        factory(Category::class, 5)->create();
+        ArticleFactory::new()->times(5)->create();
     }
 }

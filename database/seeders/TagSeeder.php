@@ -1,5 +1,7 @@
 <?php
 
+namespace Database\Seeders;
+
 use Aammui\LaravelTaggable\Models\Tag;
 use Illuminate\Database\Seeder;
 
